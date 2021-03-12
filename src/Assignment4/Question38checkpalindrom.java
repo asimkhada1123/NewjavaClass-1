@@ -1,4 +1,4 @@
-package assignment3;
+package Assignment4;
 import java.util.Scanner;
 public class Question38checkpalindrom {
     public static void palindromfinder(){

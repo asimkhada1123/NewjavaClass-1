@@ -3,12 +3,20 @@ import java.util.Scanner;
 public class Bank_Acount {
     String name;
     double balance;
+    //Why is the withdrawfee initialized to be 5
+    //Should take it from user
    double withdrawfee=5;
     static int Acountnum = 1000;
+    
+    //Should be in new file 
     public static void main(String[] args)
+    
+    
     {
+        
         Bank_Acount a=new Bank_Acount("jay" );
         a.displaya();
+
         a.deposit_balance();
         a.displaya();
         a.withdraw_balance(50);
@@ -46,8 +54,14 @@ public class Bank_Acount {
         this.balance = this.balance + balance;
 
     }
+    
+    
     public void deposit_balance()
     {
+        //Should be in main 
+        //Scanner and Enter the amount should be in main 
+        //deposit_balance takes balance and depositfee 
+        //deposit_balance should be like with_draw_balance
         Scanner a= new Scanner(System.in);
         System.out.println("Enter the amount: " );
         double  balance1 =a.nextInt();
